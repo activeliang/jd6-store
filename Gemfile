@@ -43,6 +43,8 @@ gem 'font-awesome-rails'
   gem 'figaro'
   gem 'fog'
 
+  gem 'airbrake', '~> 5.4'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
@@ -65,4 +67,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do
   gem 'pg'
-end 
+end
