@@ -16,3 +16,10 @@
 //= require bootstrap/alert
 //= require bootstrap/dropdown
 //= require_tree .
+
+
+$(document).ready(function () {
+
+    $(".player").mb_YTPlayer();
+
+});

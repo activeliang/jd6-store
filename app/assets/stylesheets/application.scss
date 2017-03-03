@@ -1,3 +1,14 @@
+// /*CSS reset*/
+// body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
+// blockquote,th,td {margin:0;padding:0;}
+// table {border-collapse:collapse;border-spacing:0;}
+// fieldset,img {border:0}
+// address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+// ol,ul {list-style:none}
+// caption,th {text-align:left}
+// h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal}
+// q:before,q:after {content:''}
+// abbr,acronym { border:0}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -17,3 +28,316 @@
    @import "bootstrap-sprockets";
    @import "bootstrap";
    @import "font-awesome";
+
+
+      @media (min-width: 768px) {
+          .navbar {
+              border-radius: 0;//圆角为0
+          }
+      }
+
+
+   .navbar {
+      margin-bottom: 0;
+   }
+   .loadingpage {
+     margin-bottom: 0;
+     margin-top: 0;
+     width: 100%;
+     border: none;
+   }
+   .loadingpage img{
+     border: 0 none;
+     margin-top: 0;
+     width: 100%;
+     height: 100%;
+   }
+   .video-section {
+     width: 1200px;
+     margin: 0 auto;
+   }
+   .aboutme {
+     padding: 30px 0 30px 0;
+     background-color: rgb(238, 195, 186);
+    //  opacity: 0.7;
+     margin-bottom: 30px;
+
+   }
+
+   .aboutme img {
+     width: 200px;
+     height: 200px;
+     display: inline;
+    //  margin-bottom: 40px;
+
+   }
+   .aboutme h3 {
+     padding-bottom: 80px;
+   }
+   .aboutme h5 {
+     width: 70%;
+     margin: 30px auto 30px auto;
+    //  margin-top: 30px;
+    //  margin-bottom: 30px;
+   }
+
+   .aboutme-first {
+     background-color: rgb(238, 195, 186);
+     padding: 8px;
+     opacity: 0.7;
+   }
+   .aboutme-first h3 {
+     margin: 0;
+   }
+
+// 以下是商品小列表
+  .diamondlist {
+    margin: 0 auto;
+    width: 1200px;
+    height: 480px;
+    margin-bottom: 40px;
+
+  }
+   .picturegroup {
+   margin: 0px auto;
+  //  width: 1200px;
+  //  height: 480px;
+ }
+ .picture-left {
+   float: left;
+   width: 240px;
+   height: 480px;
+ }
+ .picture-left img {
+   width: 100%;
+   height: 100%;
+ }
+ .picture-right{
+   float: right;
+   width: 960px;
+   height: 480px;
+ }
+ .picture-right-1 {
+   width: 960px;
+   height: 240px;
+ }
+ .picture-right-item {
+   float: left;
+   width: 240px;
+   height: 240px;
+ }
+ .picture-right-item img {
+   width: 240px;
+   height: 240px;
+ }
+ .picture-right-2 {
+   width: 960px;
+   height: 240px;
+ }
+ .picture-right-item-2x {
+   float: left;
+   width: 480px;
+   height:240px;
+ }
+// 以下是悬停效果
+//  .picture-right-item {
+//   position: relative;
+//  }
+//
+// .picture-right-item::before {
+//   display: none;
+//    content: "";
+//    width: 100%;
+//    height: 100%;
+//    background-color: transparentize(#000, .45);
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//  }
+//
+// .picture-right-item:hover::before {
+//   display: block;
+//  }
+
+.picture-right-item img{
+	transition: transform 0.25s ease;;
+}
+.picture-right-item img:hover {
+	transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+}
+
+ // 以上是钻石专区商品小列表
+
+ // 以下是铂金专区
+ .picture-left-2 {
+   float: right;
+   width: 240px;
+   height: 480px;
+ }
+ .ptlist {
+   margin: -30 auto 0 auto;
+   width: 1200px;
+   height: 480px;
+ }
+ // 以上是铂金专区
+
+ // 以下是小标题栏
+ .smallnav {
+     background-color: rgb(238,195,186);
+   margin: 40px auto 8px;
+   width: 1200px;
+   height: 45px;
+   line-height: 45px;
+   opacity: 0.7;
+
+ }
+ .smallnav h3 {
+   line-height: 45px;
+   margin: 0;
+  //  height: 30px;
+ }
+
+
+
+// 以下是页脚边上的jumbotron
+.footpageitem {
+  background-color: rgb(238,195,186);
+  margin-top: 40px;
+  padding: 30px;
+}
+.footpage {
+  width: 100%;
+  // padding: 30px;
+}
+.foot {
+  // padding: 30px;
+}
+.jumbotron {
+  padding: 30px;
+}
+
+
+ // 以下 是页脚
+ footer {
+   margin: 0 auto;
+  background-color: #2d2d30;
+  color: #f5f5f5;
+  padding: 30px;
+  padding-bottom: 0px;
+  // margin-top: 40px;
+
+ }
+ .footeritem {
+   width: 1200px;
+   margin: 0 auto;
+
+}
+footer p {
+  color: #f5f5f5;
+}
+.footertext {
+  color: rgb(189, 189, 189);
+  float: left;
+  width: 800px;
+  height: 200px;
+}
+.footertext p {
+  color: rgb(189, 189, 189);
+}
+.footercontact {
+  color: rgb(189, 189, 189);
+  float: right;
+  width: 300px;
+  height: 200px;
+}
+.column1 {
+  float: left;
+  margin-right: 120px;
+}
+.spacer {
+  float: left;
+  height: 150px;
+  width: 2px;
+  background:  rgb(189, 189, 189);
+  margin-top: 20px;
+  color: rgb(189, 189, 189);
+}
+// 以上是页脚
+
+
+
+
+
+/*商品信息*/
+.productDetail {
+ width: 1200px;
+ margin: 20px auto;
+ height: 518px;
+}
+
+.productDetail-left {
+ float: left; /*你去左边*/
+ width: 420px;
+ height: 518px;
+}
+
+.productDetail-right {
+ float: right; /*你去右边*/
+ width: 744px;
+ height: 518px;
+}
+
+.productDetailcontent{
+  margin-left: 30px;
+}
+
+.productDetail-left-bigImage {
+ width: 420px;
+ height: 420px;
+}
+
+.productDetail-left-imageList {
+ margin-top: 15px;
+}
+
+.productDetail-left-imageList-item {
+ float: left; /*虽然我们是block元素，但是我们还是想在同一行呀，那就用float吧*/
+ width: 72px;
+ height: 72px;
+ margin-right: 15px;
+}
+
+.productDetail-left-imageList-lastItem {
+ margin-right: 0;
+}
+
+/*商品详情*/
+.productDecription {
+ width: 1200px;
+ margin: 20px auto;
+  border-top: 2px solid #BDBDBD;
+  border-bottom: 2px solid #BDBDBD;
+}
+
+.productDecription-menuList {
+ height: 50px;
+  background-color: #E0E0E0;
+}
+
+.productDecription-menuList-item {
+ float: left;
+ width: 175px;
+ height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.productDecription-content {
+ width: 800px;
+ height: auto;
+ margin: 10px auto;
+}
