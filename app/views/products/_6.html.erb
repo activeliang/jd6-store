@@ -4,21 +4,21 @@
 
     <div class="productDetail-left-bigImage">
         <!-- <%= image_tag("http://olmrxx9ks.bkt.clouddn.com/blog/2017-03-04-013239.jpg", class: "img-responsive") %> -->
-        <img src="![](http://olmrxx9ks.bkt.clouddn.com/blog/2017-03-04-022914.jpg)" class="img-responsive" alt="">
+        <img src="http://olmrxx9ks.bkt.clouddn.com/blog/2017-03-04-022914.jpg" class="bdbd img-responsive" alt="">
     </div>
 
     <div class="productDetail-left-imageList">
       <div class="productDetail-left-imageList-item">
-        <img src="http://olmrxx9ks.bkt.clouddn.com/blog/2017-03-04-022914.jpg"class="img-responsive" alt="pic1">
+        <img src="http://olmrxx9ks.bkt.clouddn.com/blog/2017-03-04-022914.jpg"class="bdbd img-responsive" alt="pic1">
       </div>
       <div class="productDetail-left-imageList-item">
-        <img src="http://olmrxx9ks.bkt.clouddn.com/blog/2017-03-04-022942.jpg"class="img-responsive" alt="pic1">
+        <img src="http://olmrxx9ks.bkt.clouddn.com/blog/2017-03-04-022942.jpg"class="bdbd img-responsive" alt="pic1">
       </div>
       <div class="productDetail-left-imageList-item">
-        <img src="http://olmrxx9ks.bkt.clouddn.com/blog/2017-03-04-022955.jpg"class="img-responsive" alt="pic1">
+        <img src="http://olmrxx9ks.bkt.clouddn.com/blog/2017-03-04-022955.jpg"class="bdbd img-responsive" alt="pic1">
       </div>
       <div class="productDetail-left-imageList-item">
-        <img src="http://olmrxx9ks.bkt.clouddn.com/blog/2017-03-04-023010.jpg"class="img-responsive" alt="pic1">
+        <img src="http://olmrxx9ks.bkt.clouddn.com/blog/2017-03-04-023010.jpg"class="bdbd img-responsive" alt="pic1">
       </div>
       <!-- <div class="productDetail-left-imageList-item productDetail-left-imageList-lastItem">
         <img src="http://olmrxx9ks.bkt.clouddn.com/blog/2017-03-04-013504.jpg"class="img-responsive" alt="pic1">
@@ -42,7 +42,7 @@
       <div class="pull-left" style="margin:10px 0;">
 
         <% if @product.quantity.present? && @product.quantity > 0 %>
-          <%= link_to("加入购物车", add_to_cart_product_path(@product, :method => :post,:class => "btn btn-primary btn-lg btn-danger") %>
+          <%= link_to("加入购物车", add_to_cart_product_path(@product, :method => :post),:class => "btn btn-primary btn-lg btn-danger addcart ") %>
         <% else %>
           此商品已售罄，无法购买，出门左转，欢迎下次再来
         <% end %>
@@ -55,7 +55,9 @@
 <div class="productDecription">
 
   <div class="productDecription-menuList">
-    <div class="productDecription-menuList-item">商品详情</div>
+    <div class="productDecription-menuList-item">
+      <h3>商品详情</h3>
+    </div>
   </div>
 
   <div class="productDecription-content">

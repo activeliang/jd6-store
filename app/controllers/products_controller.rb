@@ -29,6 +29,9 @@ class ProductsController < ApplicationController
         render '_11'
       elsif @product.id == 12
         render '_12'
+      else
+        redirect_to products_path
+        flash[:notice]= "测试版系统暂时只卖12款商品哦……"
       end
     end
 

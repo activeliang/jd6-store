@@ -1,32 +1,25 @@
+/*CSS reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,
+blockquote,th,td {margin:0;padding:0;}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img {border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul {list-style:none}
+caption,th {text-align:left}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal}
+q:before,q:after {content:''}
+abbr,acronym { border:0}
+
+
 // Place all the styles related to the carts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-/*5种背景颜色*/
-.bg-color1 {
-  background: black;
-}
-
-.bg-color2 {
-  background: #A1887F;
-}
-
-.bg-color3 {
-  background: #FFE066;
-}
-
-.bg-color4 {
-  background: #247BA0;
-}
-
-.bg-color5 {
-  background: #70C1B3;
-}
 
 
-.row{
+.cartcar1 {
   width: 1500px;
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 .cart-title{
@@ -50,11 +43,12 @@
   margin: 0px 25px;
 }
 
-.cartContent-item-pic{
+.cartContent-item-pic img {
   float: left;
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   margin: 5px 20px;
+  margin-left: 75px;
 }
 
 .cartContent-title{
@@ -80,6 +74,7 @@
 .sn{
   text-align:center;
   line-height:100px;//这个好坑。。
+  text-decoration: none;
 }
 
 .s3{
@@ -107,4 +102,15 @@
   line-height: 84px;
   float: right;
   margin-right: 30px;
+}
+.money {
+  color: red;
+  // background-color: blue;
+  line-height: 40px;
+
+}
+.money h4 {
+  float: right;
+  display: inline;
+  font-style: italic !important;
 }
