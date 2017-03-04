@@ -5,6 +5,41 @@ class ProductsController < ApplicationController
 
     def show
       @product = Product.find(params[:id])
+      if @product.id == 1
+        render '_1'
+      elsif @product.id == 2
+        render '_2'
+      elsif @product.id == 3
+        render '_3'
+      elsif @product.id == 4
+        render '_4'
+      elsif @product.id == 5
+        render '_5'
+      elsif @product.id == 6
+        render '_6'
+      elsif @product.id == 7
+        render '_7'
+      elsif @product.id == 8
+        render '_8'
+      elsif @product.id == 9
+        render '_9'
+      elsif @product.id == 10
+        render '_10'
+      elsif @product.id == 11
+        render '_11'
+      elsif @product.id == 12
+        render '_12'
+      end
+    end
+
+    def create
+      @product = Product.new(product_params)
+
+      if @product.save
+        redirect_to products_path
+      else
+        render :new
+      end
     end
 
        def add_to_cart
@@ -18,13 +53,4 @@ class ProductsController < ApplicationController
            end
             redirect_to :back
      end
-
-
-
-
-
-
-
-
-
 end
