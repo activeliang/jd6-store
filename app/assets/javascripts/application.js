@@ -35,32 +35,32 @@ $(document).on('mouseover', '.productDetail-left-imageList-item', function () {
   $('.productDetail-left-bigImage').find('img').attr('src', src) //把图片链接设置到大图的src里面
 })
 
-// 放大镜
-$('#preview').css('visibility', 'hidden')
-var evt = new Event(),
-    m = new Magnifier(evt);
-m.attach({
-    thumb: '#thumb',
-    large: $('.intro-preview-activeItem img').attr('src'),
-    largeWrapper: 'preview',
-    zoom: 2
-})
-
-
-$(function(){
-    $("#demo").magnify({
-        showEvent: 'click',
-        hideEvent: 'click',
-        lensWidth: 60,
-        lensHeight: 60,
-        preload: false,
-        stagePlacement: 'left',
-        loadingImage: 'pages/jquery/ajax-loader_gray.gif',
-        lensCss: {
-            backgroundColor: '#cc0000',
-            border: '0px',
-            opacity: 0.5
-        },
-        stageCss: { border: '4px solid #33cc33' }
-    });
-});
+// // 放大镜
+// $('#preview').css('visibility', 'hidden')
+// var evt = new Event(),
+//     m = new Magnifier(evt);
+// m.attach({
+//     thumb: '#thumb',
+//     large: $('.intro-preview-activeItem img').attr('src'),
+//     largeWrapper: 'preview',
+//     zoom: 2
+// })
+//
+//
+// $(function(){
+//     $("#demo").magnify({
+//         showEvent: 'click',
+//         hideEvent: 'click',
+//         lensWidth: 60,
+//         lensHeight: 60,
+//         preload: false,
+//         stagePlacement: 'left',
+//         loadingImage: 'pages/jquery/ajax-loader_gray.gif',
+//         lensCss: {
+//             backgroundColor: '#cc0000',
+//             border: '0px',
+//             opacity: 0.5
+//         },
+//         stageCss: { border: '4px solid #33cc33' }
+//     });
+// });
