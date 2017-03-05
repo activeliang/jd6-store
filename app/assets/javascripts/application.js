@@ -16,6 +16,7 @@
 //= require bootstrap/alert
 //= require bootstrap/dropdown
 //= require_tree .
+//= require bootstrap/modal
 
 // landing page 动画效果
 // new WOW().init();
