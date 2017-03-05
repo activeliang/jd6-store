@@ -15,3 +15,12 @@ u.password_confirmation = "liangliang"   # 最少要六码
 
 u.is_admin = true
 u.save
+
+create_product = for i in 1..12 do
+ r = Product.new
+ r.title = "ring"
+ r.description = ""
+ r.quantity = "10"
+ r.price = "20"
+ r.save
+end

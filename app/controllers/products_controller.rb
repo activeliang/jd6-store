@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
   end
 
     def show
-      @product = Product.find(params[:id])
+      @product = Product.find(params[:id]).order('product.id DESC')
       if @product.id == 1
         render '_1'
       elsif @product.id == 2
@@ -30,7 +30,7 @@ class ProductsController < ApplicationController
       elsif @product.id == 12
         render '_12'
       else
-        redirect_to products_path
+        redirect_to "/"
         flash[:notice]= "测试版系统暂时只卖12款商品哦……"
       end
     end
