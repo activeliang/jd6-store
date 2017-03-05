@@ -4,7 +4,7 @@ class ProductsController < ApplicationController
   end
 
     def show
-      @product = Product.find(params[:id]).order('product.id DESC')
+      @product = Product.find(params[:id])
       if @product.id == 1
         render '_1'
       elsif @product.id == 2
