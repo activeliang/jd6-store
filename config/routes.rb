@@ -4,9 +4,14 @@ Rails.application.routes.draw do
   root 'welcome#index'
   # root 'products#_ZHIAdiaozhui'
   # root 'products#show.html.erb'
-    namespace :admin do
-    resources :products
-        resources :orders do
+  namespace :admin do
+    resources :products do
+      member do
+        post :move_up
+        post :move_down
+      end
+    end
+    resources :orders do
       member do
         post :cancel
         post :ship

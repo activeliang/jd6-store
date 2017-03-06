@@ -18,26 +18,36 @@ layout "admin"
     end
   end
 
-    def index
-    @products = Product.all
+  def index
+    @products = Product.all.order("position ASC")
   end
 
-    def edit
-      @product = Product.find(params[:id])
+  def edit
+    @product = Product.find(params[:id])
+    # binding.pry
+  end
+
+  def update
+    @product = Product.find(params[:id])
+
+    if @product.update(product_params)
+      redirect_to admin_products_path
+    else
+      render :edit
     end
+  end
 
-    def update
-      @product = Product.find(params[:id])
+  def move_up
+    @product = Product.find(params[:id])
+    @product.move_higher
+    redirect_to admin_products_path
+  end
 
-      if @product.update(product_params)
-        redirect_to admin_products_path
-      else
-        render :edit
-      end
-    end
-
-
-
+  def move_down
+    @product = Product.find(params[:id])
+    @product.move_lower
+    redirect_to admin_products_path
+  end
 
   private
 
