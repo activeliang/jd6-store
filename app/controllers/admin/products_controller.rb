@@ -24,6 +24,7 @@ layout "admin"
 
   def edit
     @product = Product.find(params[:id])
+    # binding.pry
   end
 
   def update

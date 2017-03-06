@@ -45,7 +45,7 @@ gem 'font-awesome-rails'
 
   gem 'airbrake', '~> 5.4'
   gem "acts_as_list"
-  
+  gem "pry"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
